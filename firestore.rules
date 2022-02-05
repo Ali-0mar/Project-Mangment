@@ -1,0 +1,21 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if
+          request.time < timestamp.date(2022, 2, 19);
+    }
+  }
+}
+//The Basic rules
+// users collection:
+// - any authenticated user can read & create.
+// - only users who "created" a document can update it(user id's match).
+
+//Project Collection
+// - any authenticated user can read, create, & update a document.
+// - only users who "created" a document can delete it.
+
+//Deploy the rules steps:
+// in the root directory in a new terminal write:
+//firebase deploy --only firestore

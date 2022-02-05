@@ -1,0 +1,26 @@
+.projects-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 20px;
+}
+.projects-list a {
+        text-decoration: none;
+        border-radius: 6px;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+        color: inherit;
+        padding: 10px;
+}
+.project-details {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background-color: white;
+}
+
+.assigned-to {
+        margin-top: 6rem;
+        border-radius: 50%;
+}
+.assigned-to ul {
+        display: flex;
+}

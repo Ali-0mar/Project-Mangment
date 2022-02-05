@@ -1,0 +1,13 @@
+.form-in {
+        display: grid;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 15px;
+        box-shadow: 3px 3px 5px rgb(0 0 0 / 5%);
+        background: #fff;
+        align-items: center;
+        align-content: stretch;
+}
+.form-in .btn {
+        margin: auto;
+}

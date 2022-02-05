@@ -1,0 +1,6 @@
+.project-details {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 40px;
+        background: var(--bg-color);
+}

@@ -1,0 +1,29 @@
+.project-summury {
+        max-height: 60%;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 15px;
+}
+.project-summury h2 {
+        margin-bottom: 3rem;
+        text-align: center;
+}
+
+.date {
+        padding: 2px;
+        margin-bottom: 2rem;
+}
+
+.project-overview {
+        font-weight: 500;
+        letter-spacing: 1px;
+        margin-bottom: 1rem;
+}
+.project-summury h4 {
+        margin-bottom: 3rem;
+        text-align: center;
+}
+.users {
+        display: flex;
+}

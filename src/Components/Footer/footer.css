@@ -1,0 +1,8 @@
+footer {
+        min-width: 100%;
+        background-color: blue;
+        color: wheat;
+        /* padding: 1.5rem 0; */
+        text-align: center;
+        grid-area: "footer";
+}

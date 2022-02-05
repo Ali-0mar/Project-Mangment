@@ -1,0 +1,9 @@
+.create-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+
+.create-form h3 {
+        font-size: 1.1rem;
+}

@@ -1,0 +1,42 @@
+.users-list {
+        padding: 30px;
+        background: #fbfbfb;
+        color: var(--heading-color);
+}
+.parent div {
+        display: none;
+}
+.parent:hover div {
+        display: block;
+}
+.users-list h2 {
+        text-align: right;
+        border-bottom: 1px solid #eee;
+        font-size: 1.2em;
+}
+.ON {
+        color: green;
+        font-size: 30px;
+}
+.OFF {
+        color: grey;
+        font-size: 30px;
+        margin: auto 0;
+}
+.user {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 20px auto;
+}
+
+.user-list .avatar {
+        width: 20px;
+        height: 20px;
+}
+
+@media (min-width: 768px) {
+        .parent div {
+                display: block;
+        }
+}
