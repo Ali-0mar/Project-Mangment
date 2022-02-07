@@ -6,7 +6,6 @@ import { Login } from "./Pages/Login/loginPage";
 import { SignUp } from "./Pages/SignUp/signUp";
 import { ProjectDetails } from "./Pages/Project-Details/projectDetails";
 import { Header } from "./Components/Header/header";
-// import { Footer } from "./Components/Footer/footer";
 import { SideBar } from "./Components/Sidebar/sidebar";
 import { useAuthContext } from "./Hooks/useAuthContext";
 import { UsersList } from "./Components/UsersList/usersList";

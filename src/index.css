@@ -5,13 +5,17 @@
         padding: 0;
         box-sizing: border-box;
 }
+body,
+html {
+        height: 100%;
+        overflow: auto;
+}
 body {
         font-family: Poppins, sans-serif;
         font-size: 1.1em;
         background: var(--bg-color);
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        height: 100vh;
 }
 #root {
         height: 100%;
