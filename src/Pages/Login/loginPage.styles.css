@@ -9,5 +9,22 @@
         align-content: stretch;
 }
 .form-in .btn {
-        margin: auto;
+        margin: 1.5rem auto;
+}
+
+.form-in label {
+        margin-top: 1rem;
+}
+
+@media (min-width: 668px) {
+        .form-in {
+                max-width: 60%;
+                margin: auto;
+        }
+}
+
+@media (min-width: 1024px) {
+        .form-in {
+                max-width: 40%;
+        }
 }

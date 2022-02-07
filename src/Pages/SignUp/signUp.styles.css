@@ -5,9 +5,25 @@
         border-radius: 15px;
         box-shadow: 3px 3px 5px rgb(0 0 0 / 5%);
         background: #fff;
-        justify-items: stretch;
-        justify-content: space-around;
+        align-items: center;
+        align-content: stretch;
 }
 .from-up .btn {
-        margin: auto;
+        margin: 1.5rem auto;
+}
+.from-up label {
+        margin-top: 1rem;
+}
+
+@media (min-width: 668px) {
+        .from-up {
+                max-width: 60%;
+                margin: auto;
+        }
+}
+
+@media (min-width: 1024px) {
+        .from-up {
+                max-width: 40%;
+        }
 }
