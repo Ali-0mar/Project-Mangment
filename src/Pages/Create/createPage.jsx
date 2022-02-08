@@ -86,8 +86,6 @@ export const CreatePage = () => {
         }, [documents]);
         return (
                 <form className="create-form" onSubmit={handleSubmit}>
-                        <h3>Create a new project </h3>
-
                         <label>
                                 <span>Project Name</span>
                                 <input type="text" onChange={(e) => setPrjName(e.target.value)} value={prjName} required />

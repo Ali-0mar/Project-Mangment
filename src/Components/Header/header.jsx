@@ -19,7 +19,7 @@ export const Header = () => {
                                 </Link>
                                 <span className="page-title">Project Mangment</span>
                         </div>
-                        <nav>
+                        <nav className="header-nav">
                                 {!user ? (
                                         <>
                                                 <li>

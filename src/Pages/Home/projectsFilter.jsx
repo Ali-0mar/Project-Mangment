@@ -8,15 +8,15 @@ export const ProjectFilter = ({ currentFilter, handleFilter }) => {
                 handleFilter(newFilter);
         };
         return (
-                <div className="project-filter">
-                        <nav>
-                                <p>Filter by: </p>
+                <>
+                        <p>Filter by: </p>
+                        <nav className="filter">
                                 {FILTERLIST.map((f) => (
                                         <button key={f} onClick={() => handleClick(f)} className={currentFilter === f ? "active" : undefined}>
                                                 {f}
                                         </button>
                                 ))}
                         </nav>
-                </div>
+                </>
         );
 };

@@ -1,12 +1,11 @@
 .avatar {
         display: inline-block;
-        max-width: 50px;
-        max-height: 50px;
-        border-radius: 50%;
-        overflow: hidden;
+        max-width: 100px;
+        min-width: 30px;
         margin-right: 5px;
+        /* overflow: hidden; */
 }
 .avatar img {
         width: 100%;
-        height: 100%;
+        border-radius: 50%;
 }

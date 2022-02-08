@@ -23,27 +23,13 @@ export const Login = () => {
                         <h2>Sign In</h2>
                         <label>
                                 <span>Email</span>
-                                <input
-                                        type="email"
-                                        onChange={(e) => setEmail(e.target.value)}
-                                        value={email}
-                                        required
-                                />
+                                <input type="email" onChange={(e) => setEmail(e.target.value)} value={email} required />
                         </label>
                         <label>
                                 <span>Password</span>
-                                <input
-                                        type="password"
-                                        onChange={(e) => setPassword(e.target.value)}
-                                        value={password}
-                                        required
-                                />
+                                <input type="password" onChange={(e) => setPassword(e.target.value)} value={password} required />
                         </label>
-                        {isLoading ? (
-                                <button className="btn">Proccesing..</button>
-                        ) : (
-                                <button className="btn">Sign In</button>
-                        )}
+                        {isLoading ? <button className="btn">Proccesing..</button> : <button className="btn">Sign In</button>}
 
                         {error && <div className="error">{error}</div>}
                 </form>

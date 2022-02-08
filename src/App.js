@@ -22,20 +22,15 @@ function App() {
                                         {user && <SideBar />}
                                         <div className="container">
                                                 <Header />
-                                                <div className="main">
-                                                        <Routes>
-                                                                <Route path="/" element={user ? <HomePage /> : <Navigate to={"/login"} />} />
-                                                                <Route path="/login" element={user ? <Navigate to={"/"} /> : <Login />} />
-                                                                <Route path="/signup" element={user ? <Navigate to={"/"} /> : <SignUp />} />
-                                                                <Route path="/create" element={user ? <CreatePage /> : <Navigate to={"/login"} />} />
-                                                                <Route
-                                                                        path="/projects/:id"
-                                                                        element={user ? <ProjectDetails /> : <Navigate to={"/"} />}
-                                                                />
-                                                        </Routes>
-                                                </div>
+                                                <Routes>
+                                                        <Route path="/" element={user ? <HomePage /> : <Navigate to={"/login"} />} />
+                                                        <Route path="/login" element={user ? <Navigate to={"/"} /> : <Login />} />
+                                                        <Route path="/signup" element={user ? <Navigate to={"/"} /> : <SignUp />} />
+                                                        <Route path="/create" element={user ? <CreatePage /> : <Navigate to={"/login"} />} />
+                                                        <Route path="/projects/:id" element={user ? <ProjectDetails /> : <Navigate to={"/"} />} />
+                                                </Routes>
+                                                {user && <UsersList />}
                                         </div>
-                                        {user && <UsersList />}
                                 </BrowserRouter>
                         )}
                 </div>

@@ -2,8 +2,9 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: 60%;
+        margin: 2rem auto;
 }
-
-.create-form h3 {
-        font-size: 1.1rem;
+.create-form button {
+        margin-top: 5px;
 }

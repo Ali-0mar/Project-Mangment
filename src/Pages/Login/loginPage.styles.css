@@ -1,6 +1,8 @@
 .form-in {
         display: grid;
-        padding: 20px;
+        width: 90%;
+        margin: 3rem auto;
+        padding: 15px;
         border: 1px solid #ddd;
         border-radius: 15px;
         box-shadow: 3px 3px 5px rgb(0 0 0 / 5%);
@@ -8,23 +10,23 @@
         align-items: center;
         align-content: stretch;
 }
+
 .form-in .btn {
-        margin: 1.5rem auto;
+        margin: 1rem auto;
 }
 
 .form-in label {
-        margin-top: 1rem;
+        margin-top: 0.5rem;
 }
 
 @media (min-width: 668px) {
         .form-in {
-                max-width: 60%;
-                margin: auto;
+                width: 60%;
         }
 }
 
 @media (min-width: 1024px) {
         .form-in {
-                max-width: 40%;
+                width: 30%;
         }
 }

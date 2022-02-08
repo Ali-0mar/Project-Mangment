@@ -1,16 +1,20 @@
 .projects-list {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        gap: 20px;
+        grid-template-columns: 1fr;
+        max-width: 60%;
+        margin: 20px 30px;
+}
+.duedate {
+        margin-top: 25px;
 }
 .projects-list a {
         text-decoration: none;
         border-radius: 6px;
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
         color: inherit;
-        padding: 10px;
+        padding: 20px;
 }
-.project-details {
+.project-link-details {
         display: flex;
         flex-direction: column;
         padding: 10px;
@@ -18,9 +22,23 @@
 }
 
 .assigned-to {
-        margin-top: 6rem;
+        margin-top: 2.5rem;
         border-radius: 50%;
 }
 .assigned-to ul {
         display: flex;
+        width: 40%;
+}
+
+@media (min-width: 480px) {
+        .projects-list {
+                grid-template-columns: auto auto;
+                max-width: 40%;
+        }
+}
+@media (min-width: 768px) {
+        .projects-list {
+                grid-template-columns: auto auto auto;
+                max-width: 35%;
+        }
 }

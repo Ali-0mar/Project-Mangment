@@ -20,10 +20,7 @@ export const SideBar = () => {
                                 <ul>
                                         <li>
                                                 <NavLink to={"/"}>
-                                                        <img
-                                                                src={DashboardIcon}
-                                                                alt="Dashboard Icon"
-                                                        />
+                                                        <img src={DashboardIcon} alt="Dashboard Icon" />
                                                         <span>Dashboard</span>
                                                 </NavLink>
                                         </li>
@@ -35,6 +32,7 @@ export const SideBar = () => {
                                         </li>
                                 </ul>
                         </nav>
+                        <span className="users-bar">Users</span>
                 </div>
         );
 };

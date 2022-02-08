@@ -22,7 +22,7 @@ header {
         filter: invert(25%);
         width: 1.5rem;
 }
-nav {
+.header-nav {
         display: grid;
         grid-template-columns: auto auto auto;
         align-items: center;

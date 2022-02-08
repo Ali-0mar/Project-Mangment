@@ -8,7 +8,7 @@ export const ProjectList = ({ projects }) => {
                         {projects.length === 0 && <p>No Projects Pending</p>}
                         {projects.map((project) => {
                                 return (
-                                        <Link to={`/projects/${project.id}`} key={project.id} className="project-details">
+                                        <Link to={`/projects/${project.id}`} key={project.id} className="project-link-details">
                                                 <h4>{project.prjName}</h4>
                                                 <p className="duedate">{project.dueDate.toDate().toDateString()}</p>
                                                 <div className="assigned-to">

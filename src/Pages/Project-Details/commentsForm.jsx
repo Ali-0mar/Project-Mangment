@@ -36,17 +36,18 @@ export const CommentsForm = ({ project }) => {
                                         project.comments.map((comment) => {
                                                 return (
                                                         <div className="comment" key={comment.id}>
-                                                                <p className="comment-body">{comment.content} </p>
                                                                 <div className="comment-owner">
                                                                         <Avatar src={comment.photoURL} />
-                                                                        <p className="comment-date">
-                                                                                <p>
+                                                                        <div>
+                                                                                <p>{comment.displayName} </p>
+                                                                                <span className="comment-date">
                                                                                         {formatDistanceToNow(comment.createdAt.toDate(), {
                                                                                                 addSuffix: true,
                                                                                         })}
-                                                                                </p>
-                                                                        </p>
+                                                                                </span>
+                                                                        </div>
                                                                 </div>
+                                                                <p className="comment-body">{comment.content} </p>
                                                         </div>
                                                 );
                                         })}
@@ -54,7 +55,7 @@ export const CommentsForm = ({ project }) => {
                         <form className="comments-form" onSubmit={handleSubmit}>
                                 <label>
                                         <span>Add a new Comment</span>
-                                        <textarea required onChange={(e) => setNewComment(e.target.value)} value={newComment} />
+                                        <input required onChange={(e) => setNewComment(e.target.value)} value={newComment} />
                                 </label>
                                 <button className="btn">Comment</button>
                         </form>

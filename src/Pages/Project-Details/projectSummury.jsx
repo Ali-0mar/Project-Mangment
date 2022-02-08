@@ -29,6 +29,7 @@ export const ProjectSummury = ({ project }) => {
                                         project.assignedUsersList.map((user) => (
                                                 <div key={user.id} className="assigned-users">
                                                         <Avatar src={user.photoURL} />
+                                                        <p>{user.displayName} </p>
                                                 </div>
                                         ))}
                         </div>

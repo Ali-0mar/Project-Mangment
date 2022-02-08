@@ -13,11 +13,10 @@ export const SignUp = () => {
         const { error, isLoading, signUp } = useSignup();
         const handleSubmit = async (e) => {
                 e.preventDefault();
-
                 signUp(email, password, displayName, profilePic);
         };
+
         const handleFileChange = (e) => {
-                setProfilePic("");
                 let selected = e.target.files[0];
                 if (!selected) {
                         setProfilePicErr("Please Choose a profile image");
@@ -47,30 +46,15 @@ export const SignUp = () => {
                         <h2>Sign Up</h2>
                         <label>
                                 <span>Email</span>
-                                <input
-                                        type="email"
-                                        onChange={(e) => setEmail(e.target.value)}
-                                        value={email}
-                                        required
-                                />
+                                <input type="email" onChange={(e) => setEmail(e.target.value)} value={email} required />
                         </label>
                         <label>
                                 <span>Password</span>
-                                <input
-                                        type="password"
-                                        onChange={(e) => setPassword(e.target.value)}
-                                        value={password}
-                                        required
-                                />
+                                <input type="password" onChange={(e) => setPassword(e.target.value)} value={password} required />
                         </label>
                         <label>
                                 <span>Display Name</span>
-                                <input
-                                        type="text"
-                                        onChange={(e) => setDisplayName(e.target.value)}
-                                        value={displayName}
-                                        required
-                                />
+                                <input type="text" onChange={(e) => setDisplayName(e.target.value)} value={displayName} required />
                         </label>
                         <label>
                                 <span>Profile Image</span>
