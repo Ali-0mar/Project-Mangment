@@ -54,7 +54,6 @@ export const CommentsForm = ({ project }) => {
                         </div>
                         <form className="comments-form" onSubmit={handleSubmit}>
                                 <label>
-                                        <span>Add a new Comment</span>
                                         <input required onChange={(e) => setNewComment(e.target.value)} value={newComment} />
                                 </label>
                                 <button className="btn">Comment</button>

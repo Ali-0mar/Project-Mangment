@@ -4,25 +4,29 @@
         padding-bottom: 0;
 }
 .comments-list {
-        overflow: scroll;
+        overflow: auto;
+        max-height: 60%;
 }
 .comments h2 {
         margin-bottom: 10px;
 }
 .comments-form {
-        margin-top: auto;
+        margin-top: 30px;
         display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-content: center;
-        align-items: flex-end;
+        flex-direction: column;
+}
+.comments-form label {
+        max-width: 80%;
 }
 .comments-form .btn {
-        height: 38.8px;
+        height: 38px;
+        margin-top: 20px;
 }
 .comment {
         padding: 5px;
         background: #fff;
+        margin: 10px 5px;
+        margin-right: 10px;
         border-bottom: 1px solid gray;
         border-radius: 20px;
 }
@@ -40,4 +44,18 @@
 }
 .comment-owner .avatar {
         max-width: 50px;
+}
+
+@media (min-width: 1053px) {
+        .comments-form {
+                margin-top: auto;
+                display: flex;
+                align-items: flex-end;
+                flex-direction: row;
+        }
+        .comments-form .btn {
+                height: 38px;
+                margin: 0 auto;
+                margin-top: 0;
+        }
 }

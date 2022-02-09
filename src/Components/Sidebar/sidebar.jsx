@@ -32,7 +32,6 @@ export const SideBar = () => {
                                         </li>
                                 </ul>
                         </nav>
-                        <span className="users-bar">Users</span>
                 </div>
         );
 };

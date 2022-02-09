@@ -7,7 +7,6 @@
 }
 .project-summury h2 {
         margin-bottom: 3rem;
-        text-align: center;
 }
 .assigned-users {
         display: flex;
@@ -24,6 +23,8 @@
 .date {
         padding: 2px;
         margin-bottom: 2rem;
+        font-size: small;
+        color: gray;
 }
 
 .project-overview {
@@ -38,6 +39,6 @@
         display: flex;
 }
 .project-summury .btn {
-        margin: auto;
-        margin-bottom: 0;
+        margin-left: auto;
+        margin-top: auto;
 }

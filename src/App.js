@@ -15,7 +15,6 @@ import "./App.css";
 function App() {
         const { user, authIsReady } = useAuthContext();
         return (
-                // <div className="App">
                 <div className={user ? "App-2cols" : "App-1col"}>
                         {authIsReady && (
                                 <BrowserRouter>
@@ -29,7 +28,6 @@ function App() {
                                                         <Route path="/create" element={user ? <CreatePage /> : <Navigate to={"/login"} />} />
                                                         <Route path="/projects/:id" element={user ? <ProjectDetails /> : <Navigate to={"/"} />} />
                                                 </Routes>
-                                                {user && <UsersList />}
                                         </div>
                                 </BrowserRouter>
                         )}

@@ -1,35 +1,33 @@
-.users-list {
-        position: initial;
-        bottom: 0;
+/* .users-list {
+        right: 0;
         display: flex;
-        /* padding: 20px 0; */
         background: #fbfbfb;
         color: var(--heading-color);
         overflow-x: scroll;
         overflow-y: hidden;
         width: 100%;
         flex-wrap: wrap;
-        align-items: center;
-        align-content: center;
+        box-shadow: 3px 3px 18px rgb(0 0 0 / 75%);
 }
-
+*/
 .ON {
         color: green;
         font-size: 30px;
-        position: relative;
+        /* position: relative;
         left: 55px;
         top: 13px;
+	*/
 }
 .user {
-        display: flex;
+        /* display: flex;
         justify-content: flex-end;
         align-items: center;
         border-left: 1px solid #e4e4e4;
-        margin-left: 10px;
+        margin-left: 10px; */
 }
 .user:first-child {
-        border: none;
-        margin-left: 0;
+        /* border: none;
+        margin-left: 0; */
 }
 .users-list .avatar {
         max-width: 50px;

@@ -21,7 +21,7 @@ export const ProjectSummury = ({ project }) => {
                 <div className="project-summury">
                         <h2>{project.prjName}</h2>
                         <p> By: {project.createdBy.displayName} </p>
-                        <p className="date">Should be completed in {project.dueDate.toDate().toDateString()}</p>
+                        <p className="date">Due date: {project.dueDate.toDate().toDateString()}</p>
                         <p className="project-overview">{project.prjDetails} </p>
                         <h4>Assigned to :</h4>
                         <div className="users">
